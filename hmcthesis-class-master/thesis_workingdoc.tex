@@ -4,22 +4,6 @@
 %%%
 %%% Version 5.1
 
-
-%%% !!! HMC STUDENTS SHOULD REMOVE THE FOLLOWING COPYRIGHT NOTICE FROM
-%%% !!! FINAL SUBMISSIONS.
-
-%%% Copyright (C) 2004-2015 Department of Mathematics, Harvey Mudd College.
-%%%
-%%% This file is part of the sample thesis provided to HMC
-%%% mathematics students and is based on the sample thesis's
-%%% master.tex file.  Please see that file for more information.
-
-%%% See the COPYING document, which should accompany this
-%%% distribution, for information about distribution and modification
-%%% of the document and its components.
-
-%%% !!! END COPYRIGHT NOTICE.
-
 %%% Preamble.
 
 %%% The top part of your document is called the preamble.  You supply
@@ -80,11 +64,16 @@
 %%% newpxmath, newpxtext, sourcesanspro, textcomp, url, verbatim,
 %%% xspace.
 
- \usepackage{graphicx}           % More control over graphic inclusion.
+ \usepackage{graphicx,xcolor}           % More control over graphic inclusion.
  \usepackage{tikz}
  \usepackage{cancel}
 \usetikzlibrary{scopes, patterns}
 \usetikzlibrary{shapes.misc}
+
+\definecolor{color1}{rgb}{1, 0, 0}
+\definecolor{color2}{rgb}{1, 0, 0}
+\definecolor{color3}{rgb}{1, 0, 0}
+\definecolor{color4}{rgb}{1, 0, 0}
 
 
 %%% Load all other packages before this point.
@@ -111,6 +100,8 @@ cross/.default={1pt}}
 \newcommand{\bra}[1]{\langle #1 |}
 \newcommand{\braket}[2]{\langle #1 | #2 \rangle}
 \newcommand{\pn}[1]{\left(#1\right)}
+
+\newcommand{\quidit}{qui$d$it\;}
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{conjecture}[theorem]{Conjecture}
