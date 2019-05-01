@@ -8,7 +8,7 @@ A level-1 auxiliary file: equivalent-inputs.aux
 A level-1 auxiliary file: four.aux
 A level-1 auxiliary file: our_appendix.aux
 A level-1 auxiliary file: our_source_code.aux
-The style file: acm.bst
+The style file: unsrt.bst
 Database file #1: our_bib_file.bib
 Warning--entry type for "nathaniel" isn't style-file defined
 --line 32 of file our_bib_file.bib
@@ -16,48 +16,48 @@ Warning--entry type for "victor" isn't style-file defined
 --line 40 of file our_bib_file.bib
 Warning--entry type for "neal" isn't style-file defined
 --line 50 of file our_bib_file.bib
-Warning--empty journal in hyper
-Warning--empty journal in methods
 Warning--empty journal in coding
+Warning--empty journal in methods
+Warning--empty journal in hyper
 You've used 8 entries,
-            2253 wiz_defined-function locations,
-            570 strings with 4901 characters,
-and the built_in function-call counts, 1735 in all, are:
-= -- 151
-> -- 76
+            1791 wiz_defined-function locations,
+            488 strings with 4540 characters,
+and the built_in function-call counts, 1117 in all, are:
+= -- 81
+> -- 47
 < -- 0
-+ -- 32
-- -- 24
-* -- 86
-:= -- 307
-add.period$ -- 18
++ -- 20
+- -- 12
+* -- 29
+:= -- 187
+add.period$ -- 21
 call.type$ -- 8
-change.case$ -- 34
+change.case$ -- 6
 chr.to.int$ -- 0
 cite$ -- 11
-duplicate$ -- 74
-empty$ -- 155
-format.name$ -- 24
-if$ -- 352
+duplicate$ -- 59
+empty$ -- 135
+format.name$ -- 12
+if$ -- 250
 int.to.chr$ -- 0
 int.to.str$ -- 8
 missing$ -- 7
-newline$ -- 37
-num.names$ -- 16
-pop$ -- 59
+newline$ -- 40
+num.names$ -- 8
+pop$ -- 50
 preamble$ -- 1
-purify$ -- 28
+purify$ -- 0
 quote$ -- 0
-skip$ -- 51
+skip$ -- 27
 stack$ -- 0
-substring$ -- 40
-swap$ -- 13
+substring$ -- 0
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 28
+type$ -- 0
 warning$ -- 3
-while$ -- 16
+while$ -- 8
 width$ -- 9
-write$ -- 67
+write$ -- 73
 (There were 6 warnings)
