@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis_workingdoc.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: background.aux
+A level-1 auxiliary file: previous-work.aux
+A level-1 auxiliary file: equivalent-inputs.aux
+A level-1 auxiliary file: four.aux
+A level-1 auxiliary file: our_appendix.aux
+A level-1 auxiliary file: our_source_code.aux
+The style file: unsrt.bst
+Database file #1: our_bib_file.bib
+Warning--entry type for "nathaniel" isn't style-file defined
+--line 9 of file our_bib_file.bib
+Warning--entry type for "victor" isn't style-file defined
+--line 17 of file our_bib_file.bib
+Warning--entry type for "neal" isn't style-file defined
+--line 28 of file our_bib_file.bib
+Warning--empty journal in methods
+Warning--empty journal in hyper
+You've used 7 entries,
+            1791 wiz_defined-function locations,
+            484 strings with 4476 characters,
+and the built_in function-call counts, 989 in all, are:
+= -- 71
+> -- 43
+< -- 0
++ -- 18
+- -- 11
+* -- 26
+:= -- 164
+add.period$ -- 18
+call.type$ -- 7
+change.case$ -- 5
+chr.to.int$ -- 0
+cite$ -- 9
+duplicate$ -- 51
+empty$ -- 121
+format.name$ -- 11
+if$ -- 223
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 6
+newline$ -- 35
+num.names$ -- 7
+pop$ -- 45
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 24
+stack$ -- 0
+substring$ -- 0
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 7
+width$ -- 8
+write$ -- 64
+(There were 5 warnings)

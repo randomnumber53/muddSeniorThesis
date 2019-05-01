@@ -1,0 +1,39 @@
+\begin{thebibliography}{1}
+
+\bibitem{methods}
+L.~Vaidman and N.~Yoran.
+\newblock Methods for reliable teleportation.
+\newblock 1998.
+
+\bibitem{nathaniel}
+Nathaniel Leslie.
+\newblock Maximal lelm distinguishability of qubit and qutrit bell states using
+  projective and non-projective measurements, 2017.
+
+\bibitem{victor}
+Victor Shang.
+\newblock Computational progress towards maximum distinguishability of bell
+  states by linear evolution and local measurement, 2016.
+
+\bibitem{neal}
+Neal~C. Pisenti.
+\newblock Distinguishability of hyper-entangled bell states with linear
+  devices, 2011.
+
+\bibitem{hyper}
+N.~Pisenti, C.~P.~E. Gaebler, and T.~W. Lynn.
+\newblock Distinguishability of hyperentangled bell state by linear evolution
+  and local projective measurement.
+\newblock 2011.
+
+\bibitem{qibook}
+Eleanor Rieffel and Wolfgang Polak.
+\newblock {\em Quantum Computing: A Gentle Introduction}.
+\newblock The MIT Press, 2014.
+
+\bibitem{ccbook}
+Chistos~M. Papadimitriou.
+\newblock {\em Computational Complexity}.
+\newblock Pearson, 1993.
+
+\end{thebibliography}
