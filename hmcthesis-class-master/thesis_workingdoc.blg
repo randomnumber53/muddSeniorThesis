@@ -8,55 +8,56 @@ A level-1 auxiliary file: equivalent-inputs.aux
 A level-1 auxiliary file: four.aux
 A level-1 auxiliary file: our_appendix.aux
 A level-1 auxiliary file: our_source_code.aux
-The style file: unsrt.bst
+The style file: acm.bst
 Database file #1: our_bib_file.bib
 Warning--entry type for "nathaniel" isn't style-file defined
---line 9 of file our_bib_file.bib
+--line 32 of file our_bib_file.bib
 Warning--entry type for "victor" isn't style-file defined
---line 17 of file our_bib_file.bib
+--line 40 of file our_bib_file.bib
 Warning--entry type for "neal" isn't style-file defined
---line 28 of file our_bib_file.bib
-Warning--empty journal in methods
+--line 50 of file our_bib_file.bib
 Warning--empty journal in hyper
-You've used 7 entries,
-            1791 wiz_defined-function locations,
-            484 strings with 4476 characters,
-and the built_in function-call counts, 989 in all, are:
-= -- 71
-> -- 43
+Warning--empty journal in methods
+Warning--empty journal in coding
+You've used 8 entries,
+            2253 wiz_defined-function locations,
+            570 strings with 4901 characters,
+and the built_in function-call counts, 1735 in all, are:
+= -- 151
+> -- 76
 < -- 0
-+ -- 18
-- -- 11
-* -- 26
-:= -- 164
++ -- 32
+- -- 24
+* -- 86
+:= -- 307
 add.period$ -- 18
-call.type$ -- 7
-change.case$ -- 5
+call.type$ -- 8
+change.case$ -- 34
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 51
-empty$ -- 121
-format.name$ -- 11
-if$ -- 223
+cite$ -- 11
+duplicate$ -- 74
+empty$ -- 155
+format.name$ -- 24
+if$ -- 352
 int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 6
-newline$ -- 35
-num.names$ -- 7
-pop$ -- 45
+int.to.str$ -- 8
+missing$ -- 7
+newline$ -- 37
+num.names$ -- 16
+pop$ -- 59
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 28
 quote$ -- 0
-skip$ -- 24
+skip$ -- 51
 stack$ -- 0
-substring$ -- 0
-swap$ -- 5
+substring$ -- 40
+swap$ -- 13
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 2
-while$ -- 7
-width$ -- 8
-write$ -- 64
-(There were 5 warnings)
+type$ -- 28
+warning$ -- 3
+while$ -- 16
+width$ -- 9
+write$ -- 67
+(There were 6 warnings)

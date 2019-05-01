@@ -101,7 +101,8 @@ cross/.default={1pt}}
 \newcommand{\braket}[2]{\langle #1 | #2 \rangle}
 \newcommand{\pn}[1]{\left(#1\right)}
 
-\newcommand{\quidit}{qui$d$it\;}
+% \newcommand{\qudit}{qu$d$it\;}
+\newcommand{\qudit}{qudit}
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{conjecture}[theorem]{Conjecture}
@@ -230,10 +231,22 @@ cross/.default={1pt}}
 
 %%% Abstract
 
+% Turner: Distinguishability of Qudit Hyperentangled States with Linear Evolution and Local Measurement
+
+% Entanglement is a property of quantum systems that is central to many applications such as quantum teleportation, quantum secret sharing, quantum dense coding, and quantum cryptography. All of these applications require measurement of entangled particles in the “Bell state basis.” The goal of this kind of measurement is to distinguish qudit hyperentangled states, or states of two particles simultaneously entangled in multiple variables, where each variable takes an arbitrary number d of distinct values in a par- ticular basis. Such measurements are difficult in general, and so measurements that use only linear evolution and local measurement (LELM) are of particular interest. However, it is known that LELM measurements cannot reliably distinguish the full set of Bell states from each other. We show a theoretical bound on the number of qudit hyperentangled Bell states that can be distinguished by LELM devices, setting limitations on various quantum information protocols.
+
+% Victor: Computational Progress towards Maximum Distinguishability of Bell States by Linear Evolution and Local Measurement
+
+% Many quantum information protocols rely on the ability to distinguish between entangled quantum states known as Bell states. However, theoretical limits exist on the maximal distinguishability of these entangled states us- ing linear evolution and local measurement (LELM) devices. In the case of two particles entangled in multiple qubit variables, the maximum number of distinguishable Bell states is known. However, in the more general case of two particles entangled in multiple qudit variables, only an upper bound is known under additional assumptions. I have written software in Matlab and Mathematica to explore computationally the maximum number of Bell states that can be distinguished in the case of two particles entangled in a qutrit variable, and the case of two particles entangled in both a qutrit and qubit variable. Using code I have written in Mathematica, I have reduced the number of cases to check for sets of 9 qubit⊗qutrit Bell states from 94, 143, 280 to 10, 365. Further work needs to be done to computationally check these cases for distinguishability by an LELM apparatus.
+
+% Nathaniel: Maximal LELM Distinguishability of Qubit and Qutrit Bell States using Projective and Non-Projective Measurements
+
+% Many quantum information tasks require measurements to distinguish between different quantum-mechanically entangled states (Bell states) of a particle pair. In practice, measurements are often limited to linear evolution and local measurement (LELM) of the particles. We investigate LELM distinguishability of the Bell states of two qubits (two-state particles) and qutrits (three-state particles), via standard projective measurement and via generalized measurement, which allows detection channels beyond the number of orthogonal single-particle states. Projective LELM can only distinguish 3 of 4 qubit Bell states; we show that generalized measurement does no better. We show that projective LELM can distinguish only 3 of 9 qutrit Bell states for bosons that generalized LELM allows at most 5 of 9 for any particle statistics. We have also made progress on distinguishing qubit ⇥ qutrit hyperentangled Bell states, which are made up of tensor products of the qubit Bell states and the qutrit Bell states, showing that the maximum number distinguishable with projective LELM measurements is between 9 and 11.
+
 \begin{abstract}
-  Your abstract should be a \emph{brief} summary of the contents of
-  your report.  Don't go into excruciating detail here---there's
-  plenty of room for that later.
+
+For many quantum information protocols, it is useful to be able to reliably differentiate between several entangled states. Practical restrictions on building quantum devices have pushed theorists towards studying the power of quantum devices limited to locally manipulating their particles. In this thesis, we are concerned with determining the power of linear evolution, local measurement (LELM) devices for distinguishing sets of Bell states. The qubit case has been fully studied previously: projective LELM devices cannot distinguish all four qubit Bell states, they can only reliably distinguish three. The question of how many qudit Bell states a projective LELM device can reliably distinguish is still open. In this thesis, we explore various computational and mathematical tools for investigating this question.
+
 \end{abstract}
 
 
@@ -254,15 +267,13 @@ cross/.default={1pt}}
 \begin{acknowledgments}
 %% How do you even write these things?
 
-I'd like to thank Professor Theresa Lynn for doing all of the things I could have possibly wanted an advisor to do, and doing those things very well. I would also like to thank Anna Barth, with whom I developed almost as many ideas as we shot down. And more generally, I'd like to thank the people at Harvey Mudd College---it is them that have made this experience worth it.
+I would like to thank Professor Theresa Lynn for doing all of the things I could have possibly wanted an advisor to do, and doing those things very well. I would also like to thank Anna Barth, with whom I developed almost as many ideas as we shot down. And more generally, I would like to thank the people at Harvey Mudd College---it is them that have made this experience worth it.
 
-%% She also helped me secure a 11am presentation time instead of an 8am presentation time, for which I am eternally grateful.  
+%% Prof. Lynn also helped me secure a 11am presentation time instead of an 8am presentation time, for which I am eternally grateful.  
 
+%% I'd also like to thank the music genre mathcore. Without it, I wouldn't have had the stamina to finish writing even this sentance.
 
-%% I'd also like to thank the music genre mathcore. Without it, I wouldn't have had the stamina to finish 
-
-
-%% Finally, I'd like to acknowledge Cthulhu, whose friendship and support has guided me through my darkest times at Mudd.
+%% Finally, I'd like to acknowledge Cthulhu, whose friendship and support has guided me through my darkest times at Mudd. Praise. 
 
 \end{acknowledgments}
 
@@ -379,7 +390,7 @@ I'd like to thank Professor Theresa Lynn for doing all of the things I could hav
 %%% your field sanctions such practices, or if you just want to get an
 %%% idea of what you have in your bibliography file, you can include
 %%% everything with the \nocite{*} command.
-\nocite{*} 
+
 
 
 %%% The appearance of your bibliography and citations in your text are
@@ -394,7 +405,8 @@ I'd like to thank Professor Theresa Lynn for doing all of the things I could hav
 %%% For math Clinic reports and theses, we use the hmcmath
 %%% bibliography style.
 
-\bibliographystyle{unsrt}
+\bibliographystyle{acm}
+\nocite{*} 
 
 %%% The hmcmath bibliographic style is meant for use with the
 %%% natbib bibliography and citation package, which is loaded by
