@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 MAY 2019 02:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 MAY 2019 05:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -945,13 +945,13 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \c@theorem=\count144
 LaTeX Font Info:    Try loading font information for T1+zpltlf on input line 20
-9.
+8.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/newpx/t1zpltlf.fd
 File: t1zpltlf.fd 2015/01/17 v1.0 font definition file for T1/zpl/tlf
 )
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 209.
+(Font)              scaled to size 10.0pt on input line 208.
 
 (./thesis_workingdoc.aux (./introduction.aux) (./background.aux)
 (./previous-work.aux) (./equivalent-inputs.aux) (./four.aux)
@@ -978,57 +978,57 @@ or select author-year BibTeX style, e.g. plainnat
 )
 \openout1 = `thesis_workingdoc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 209.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 208.
 LaTeX Font Info:    Try loading font information for OML+npxmi on input line 20
-9.
+8.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for OMS/npxsy/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for OMS/npxsy/m/n on input line 208.
 LaTeX Font Info:    Try loading font information for OMS+npxsy on input line 20
-9.
+8.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/newpx/omsnpxsy.fd
 File: omsnpxsy.fd 2013/03/24 Fontinst v1.933 font definitions for OMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 209.
-LaTeX Font Info:    Try loading font information for U+npxexa on input line 209
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 208.
+LaTeX Font Info:    Try loading font information for U+npxexa on input line 208
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 209.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 209.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 208.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 208.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 209.
-LaTeX Font Info:    Try loading font information for LY1+ptm on input line 209.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 208.
+LaTeX Font Info:    Try loading font information for LY1+ptm on input line 208.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 209.
+(Font)              scaled to size 10.95pt on input line 208.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1063,7 +1063,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@mv@tabular=\count151
 \c@mv@boldtabular=\count152
-LaTeX Info: Redefining \microtypecontext on input line 209.
+LaTeX Info: Redefining \microtypecontext on input line 208.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1080,7 +1080,7 @@ Package microtype Info: Loading generic settings for font family
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring OFF on input line 209.
+Package hyperref Info: Link coloring OFF on input line 208.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1090,33 +1090,36 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count153
 )
-LaTeX Info: Redefining \ref on input line 209.
-LaTeX Info: Redefining \pageref on input line 209.
-LaTeX Info: Redefining \nameref on input line 209.
+LaTeX Info: Redefining \ref on input line 208.
+LaTeX Info: Redefining \pageref on input line 208.
+LaTeX Info: Redefining \nameref on input line 208.
 
 (./thesis_workingdoc.out) (./thesis_workingdoc.out)
 \@outlinefile=\write4
 \openout4 = `thesis_workingdoc.out'.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 230.
+(Font)              scaled to size 17.28pt on input line 229.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 230.
+(Font)              scaled to size 14.4pt on input line 229.
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 230.
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 229.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 230.
-LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 230.
+(Font)              scaled to size 14.4pt on input line 229.
 
+
+LaTeX Warning: No \liaison given.
+
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 229.
 <hmclogo.pdf, id=83, 289.08pt x 289.08pt>
 File: hmclogo.pdf Graphic file (type pdf)
  <use hmclogo.pdf>
-Package pdftex.def Info: hmclogo.pdf used on input line 230.
+Package pdftex.def Info: hmclogo.pdf used on input line 229.
 (pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
 LaTeX Font Info:    Try loading font information for T1+SourceSansPro-LF on inp
-ut line 230.
+ut line 229.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/sourcesanspro/T1SourceSansPro-LF.
 fd
@@ -1124,13 +1127,13 @@ File: T1SourceSansPro-LF.fd 2015/01/11 (autoinst) Font definitions for T1/Sourc
 eSansPro-LF.
 )
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
-(Font)              scaled to size 11.75995pt on input line 230.
+(Font)              scaled to size 11.75995pt on input line 229.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `SourceSansPro-LF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
-(Font)              scaled to size 11.75995pt on input line 230.
+(Font)              scaled to size 11.75995pt on input line 229.
  [1
 
 
@@ -1138,36 +1141,36 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./hmclo
 go.pdf>]
 LaTeX Font Info:    Try loading font information for TS1+zpltlf on input line 2
-30.
+29.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 File: ts1zpltlf.fd 2015/01/18 v1.0 fd file for TS1/zpltlf
 )
 LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 230.
+(Font)              scaled to size 10.0pt on input line 229.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `zpltlf' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [2]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 24.88pt on input line 246.
+(Font)              scaled to size 24.88pt on input line 245.
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 246.
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 245.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 24.88pt on input line 246.
+(Font)              scaled to size 24.88pt on input line 245.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 248.
+(Font)              scaled to size 8.0pt on input line 247.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 248.
-LaTeX Font Info:    Try loading font information for U+msa on input line 248.
+(Font)              scaled to size 6.1pt on input line 247.
+LaTeX Font Info:    Try loading font information for U+msa on input line 247.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 248.
+LaTeX Font Info:    Try loading font information for U+msb on input line 247.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1175,19 +1178,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+npxmia on input line 248
+LaTeX Font Info:    Try loading font information for U+npxmia on input line 247
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Try loading font information for U+npxsym on input line 248
+LaTeX Font Info:    Try loading font information for U+npxsym on input line 247
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Try loading font information for U+npxsyc on input line 248
+LaTeX Font Info:    Try loading font information for U+npxsyc on input line 247
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/newpx/unpxsyc.fd
@@ -1274,35 +1277,46 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
 (Font)              scaled to size 9.79996pt on input line 175.
  [8]
+Overfull \hbox (73.13249pt too wide) detected at line 191
+\U/npxmia/m/it/10.95 `\OML/npxmi/m/it/10.95 i\U/npxmia/m/it/10.95 ¦ \OMS/npxsy/
+m/n/10.95 
+ \U/npxmia/m/it/10.95 `\OML/npxmi/m/it/10.95 j\U/npxmia/m/it/10.95 ¦ 5 [] []
+ []
+
+
+Overfull \hbox (39.59517pt too wide) in paragraph at lines 199--199
+[] 
+ []
+
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 184.
+(Font)              scaled to size 10.95pt on input line 201.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpltlf/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 190--334
+[9])
+Underfull \hbox (badness 10000) in paragraph at lines 207--333
 
  []
 
-[9] [10]
+[10]
 \openout2 = `previous-work.aux'.
 
  (./previous-work.tex
 Chapter 3.
-) [11
+[11
 
 
 
-]
+]) [12]
 \openout2 = `equivalent-inputs.aux'.
 
- (./equivalent-inputs.tex [12
+ (./equivalent-inputs.tex
+Chapter 4.
+[13
 
 
 
 ]
-Chapter 4.
-[13]
 Overfull \hbox (113.51987pt too wide) in paragraph at lines 93--94
  [][] 
  []
@@ -1405,25 +1419,25 @@ No file our_source_code.tex.
 ] (./thesis_workingdoc.bbl) [27
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 446.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 446.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 445.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 445.
  (./thesis_workingdoc.aux
 (./introduction.aux) (./background.aux) (./previous-work.aux)
 (./equivalent-inputs.aux) (./four.aux) (./our_appendix.aux)
 (./our_source_code.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 446.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 446.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 445.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 445.
 Package rerunfilecheck Info: File `thesis_workingdoc.out' has not changed.
 (rerunfilecheck)             Checksum: 5E7120E81EFE0B8AF5464D3FF29E5513;1269.
  ) 
 Here is how much of TeX's memory you used:
- 22611 strings out of 493089
- 412279 string characters out of 6134842
+ 22616 strings out of 493089
+ 412350 string characters out of 6134842
  498353 words of memory out of 5000000
  25236 multiletter control sequences out of 15000+600000
- 206173 words of font info for 334 fonts, out of 8000000 for 9000
+ 206545 words of font info for 336 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 55i,25n,77p,1360b,727s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,26n,77p,1360b,727s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc}{/
 usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}{/usr
 /local/texlive/2015/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.enc}{/usr
@@ -1448,10 +1462,10 @@ r/local/texlive/2015/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb></usr/local/texlive/20
 15/texmf-dist/fonts/type1/public/boondox/zxxrl8a.pfb>
-Output written on thesis_workingdoc.pdf (37 pages, 309030 bytes).
+Output written on thesis_workingdoc.pdf (37 pages, 313431 bytes).
 PDF statistics:
- 448 PDF objects out of 1000 (max. 8388607)
- 386 compressed objects within 4 object streams
- 103 named destinations out of 1000 (max. 500000)
+ 452 PDF objects out of 1000 (max. 8388607)
+ 390 compressed objects within 4 object streams
+ 105 named destinations out of 1000 (max. 500000)
  33450 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -181,6 +181,23 @@ The basis of single-particle states is:
 \]
 The basis is of size $2d$, since each particle can either be from the left channel or the right channel. A pair of two detection modes is called a \textit{detection signature}. Each detection mode is an element in the span of $\mathcal{B}_{\text{single-particle}}$.  However, if $\ket{i}$ and $\ket{j}$ are detection modes then when determining their combined detection signature, we cannot simply take $\ket{i} \otimes \ket{j}$, since that may include inputs where two particles are coming from the same channel. Thus, we introduce the $P_{LR}$ projection operator, which removes all elements of $\mathcal{B}_{\text{single-particle}} \times \mathcal{B}_{\text{single-particle}}$ of the form $\ket{*, L}\ket{*', L}$ or $\ket{*, R}\ket{*', R}$ and renormalizes the resulting state.
 
+As an example for how to calculate a detection signature, take $\ket{i}$ and $\ket{j}$ to be
+\[
+\ket{i} = \frac{1}{\sqrt{2}}\pn{\ket{1, L} + \ket{2, R}} \quad \text{and} \quad \ket{j} = \frac{1}{\sqrt{3}}\pn{\ket{0, L} + i \ket{1, L} - \ket{2, R}}.
+\]
+Their tensor product is:
+\[
+\ket{i} \otimes \ket{j} = \frac{1}{\sqrt{6}} \pn{\ket{1, L}\ket{0, L} + i \ket{1, L}\ket{1, L} - \ket{1, L}\ket{2, R} + \ket{2, R}\ket{0, L} + i\ket{2, R}\ket{1, L} - \ket{2, R}\ket{2, R}}
+\]
+and their detection signature is $\ket{i}\ket{j} = P_{LR}\pn{\ket{i} \otimes \ket{j}}$, i.e.,
+\begin{equation}
+\begin{split}
+    & P_{LR}\pn{\ket{i} \otimes \ket{j}} = \\ 
+  & \frac{1}{\sqrt{6}} \pn{\cancel{\ket{1, L}\ket{0, L}} + \cancel{i \ket{1, L}\ket{1, L}} - \ket{1, L}\ket{2, R} + \ket{2, R}\ket{0, L} + i\ket{2, R}\ket{1, L} - \cancel{\ket{2, R}\ket{2, R}}} = \\
+  & \frac{1}{\sqrt{3}} \pn{-\ket{1, L}\ket{2, R} + \ket{2, R}\ket{0, L} + i\ket{2, R}\ket{1, L}}.
+\end{split}
+\end{equation}
+
 An LELM device is specified by defining the $d\times d$ matrices $U_{\text{R}}$ and $U_{\text{L}}$, the $2d \times 2d$ matrix $U_{\text{mix}}$, and the $2d$ detection signatures $\ket{1}, \ldots, \ket{2d}$, which are vectors in the vector space $\textsc{span}\pn{\mathcal{B}_{\text{single-particle}}}$.
 
 A small technicality. We've introduced here three transformations: $U_{\text{R}}$, $U_{\text{L}}$, and $U_\text{mix}$. The purpose of $U_\text{mix}$ is to allow mixing of channels that the particles may take in addition to possible operations the particles may go through individually. We can, however, incorporate the operation $U_\text{mix}$ into the detection modes. The LELM device with $U_\text{mix} = U$ and detection modes $\ket{1}, \ldots, \ket{2d}$ as detection modes is equivalent to the device with $U_\text{mix} = I$, the identity matrix, and detection modes $U^\dagger \ket{1}, \ldots, U^\dagger \ket{2d}$.
@@ -189,4 +206,4 @@ A small technicality. We've introduced here three transformations: $U_{\text{R}}
 
 Here, we formally define the LELM Bell basis distinguishability problem. First, we fix $d$, the dimension of our particles. Let $\mathcal{B}_d$ refer to the $d$-dimensional Bell basis. The distinguishability problem is the following.
 \\ \\
-What's the largest $k$ such that there exists a subset of the Bell basis $S = \{\ket{\Psi_1}, \ldots, \ket{\Psi_1}\} \subseteq \mathcal{B}_d$ and there exists an LELM device such that whenever a state $\ket{\Psi_a} \in S$ has a nonzero probability of causing detector pair $i, j$ to fire then no other state $\ket{\Psi_a} \in S$ has a nonzero probability of causing detector pair $i, j$ to fire. 
+What's the largest $k$ such that there exists a subset of the Bell basis $S = \{\ket{\Psi_1}, \ldots, \ket{\Psi_1}\} \subseteq \mathcal{B}_d$ and an LELM device such that each state has a nonzero probability of causing some detection signature to fire and whenever a state $\ket{\Psi_a} \in S$ has a nonzero probability of causing detector pair $i, j$ to fire then no other state $\ket{\Psi_a} \in S$ has a nonzero probability of causing detector pair $i, j$ to fire. 

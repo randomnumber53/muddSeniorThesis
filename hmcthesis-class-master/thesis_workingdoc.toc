@@ -8,12 +8,12 @@
 \contentsline {subsection}{\numberline {2.3.1}A Superdense Coding Scheme}{6}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}The Generalized Bell Basis}{8}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Linear Evolution Local Measurement Devices}{8}{section.2.4}
-\contentsline {section}{\numberline {2.5}The Distinguishability Problem}{9}{section.2.5}
+\contentsline {section}{\numberline {2.5}The Distinguishability Problem}{10}{section.2.5}
 \contentsline {chapter}{\numberline {3}Previous Work}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Work on Equivalent Inputs}{11}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Leslie's Work}{11}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Other Work}{11}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Work on Hyperentanglement}{11}{section.3.2}
+\contentsline {subsection}{\numberline {3.1.1}Nathaniel Leslie's Thesis Work}{12}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Other Work}{12}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Work on Hyperentanglement}{12}{section.3.2}
 \contentsline {chapter}{\numberline {4}Characterizing Equivalent Inputs}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}A Group of Transformations}{13}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Defining the Transformations}{15}{subsection.4.1.1}

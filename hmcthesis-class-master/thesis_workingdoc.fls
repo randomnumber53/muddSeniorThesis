@@ -485,6 +485,13 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSan
 OUTPUT previous-work.aux
 INPUT previous-work.tex
 INPUT previous-work.tex
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/newpx/zplmi.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/pxfonts/pxmi.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/pxfonts/pxmi.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/pxfonts/rpxmi.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/pxfonts/rpxpplri.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/newpx/zplsy.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/pxfonts/pxsy.tfm
 OUTPUT equivalent-inputs.aux
 INPUT equivalent-inputs.tex
 INPUT equivalent-inputs.tex
@@ -573,11 +580,6 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/newpx/zplmia.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/pxfonts/pxmia.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/newpx/zplr-x.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/newtx/ntxmia.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/newpx/zplmi.vf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/pxfonts/pxmi.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/pxfonts/pxmi.vf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/pxfonts/rpxmi.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/pxfonts/rpxpplri.tfm
 OUTPUT four.aux
 INPUT four.tex
 INPUT four.tex
