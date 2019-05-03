@@ -19,45 +19,45 @@ Warning--entry type for "neal" isn't style-file defined
 Warning--empty journal in coding
 Warning--empty journal in methods
 Warning--empty journal in hyper
-You've used 8 entries,
+You've used 9 entries,
             1791 wiz_defined-function locations,
-            488 strings with 4540 characters,
-and the built_in function-call counts, 1117 in all, are:
-= -- 81
-> -- 47
+            493 strings with 4626 characters,
+and the built_in function-call counts, 1263 in all, are:
+= -- 93
+> -- 51
 < -- 0
-+ -- 20
-- -- 12
-* -- 29
-:= -- 187
-add.period$ -- 21
-call.type$ -- 8
++ -- 22
+- -- 13
+* -- 32
+:= -- 210
+add.period$ -- 24
+call.type$ -- 9
 change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 59
-empty$ -- 135
-format.name$ -- 12
-if$ -- 250
+cite$ -- 12
+duplicate$ -- 69
+empty$ -- 154
+format.name$ -- 13
+if$ -- 285
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 7
-newline$ -- 40
-num.names$ -- 8
-pop$ -- 50
+int.to.str$ -- 9
+missing$ -- 9
+newline$ -- 45
+num.names$ -- 9
+pop$ -- 57
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 27
+skip$ -- 29
 stack$ -- 0
 substring$ -- 0
-swap$ -- 5
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 8
-width$ -- 9
-write$ -- 73
+while$ -- 9
+width$ -- 10
+write$ -- 83
 (There were 6 warnings)

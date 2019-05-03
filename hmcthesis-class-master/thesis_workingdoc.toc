@@ -1,27 +1,26 @@
 \contentsline {chapter}{Abstract}{iii}{chapter*.1}
-\contentsline {chapter}{Acknowledgments}{xi}{chapter*.5}
+\contentsline {chapter}{Acknowledgments}{ix}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Background}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Quantum Information and Entanglement}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Bits, Qubits, Qutrits, Qudits}{3}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Entanglement}{5}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}The Basics of Bell Bases}{5}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Linear Evolution Local Measurement Apparatuses}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}The Distinguishability Problem}{6}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Motivation}{6}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Formalization}{6}{subsection.2.3.2}
-\contentsline {chapter}{\numberline {3}Previous Work}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Work on Equivalent Inputs}{7}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Leslie's Work}{7}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Other Work}{7}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Work on Hyperentanglement}{7}{section.3.2}
-\contentsline {chapter}{\numberline {4}Characterizing Equivalent Inputs}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}A Group of Transformations}{9}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Defining the Transformations}{11}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Orbit-Stabilizer on our Group of Transformations}{16}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}The $d = 4$ Case}{17}{section.4.2}
-\contentsline {chapter}{\numberline {5}Comparing the $d=4$ Bell Basis with the Hyperentangled Basis}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}Which Reductions are Possible?}{21}{section.5.1}
-\contentsline {section}{\numberline {5.2}An Experimental Approach}{21}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Gardient Descent into Madness}{21}{subsection.5.2.1}
-\contentsline {chapter}{Bibliography}{23}{appendix*.11}
+\contentsline {section}{\numberline {2.1}Bits, Qubits, Qutrits, Qudits}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Multi-particle Systems and Entanglement}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}The Basics of Bell Bases}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Linear Evolution Local Measurement Apparatuses}{7}{section.2.4}
+\contentsline {section}{\numberline {2.5}The Distinguishability Problem}{8}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Motivation}{8}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Formalization}{8}{subsection.2.5.2}
+\contentsline {chapter}{\numberline {3}Previous Work}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Work on Equivalent Inputs}{9}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Leslie's Work}{9}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Other Work}{9}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Work on Hyperentanglement}{9}{section.3.2}
+\contentsline {chapter}{\numberline {4}Characterizing Equivalent Inputs}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}A Group of Transformations}{11}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Defining the Transformations}{13}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Orbit-Stabilizer on our Group of Transformations}{18}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}The $d = 4$ Case}{19}{section.4.2}
+\contentsline {chapter}{\numberline {5}Comparing the $d=4$ Bell Basis with the Hyperentangled Basis}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Which Reductions are Possible?}{23}{section.5.1}
+\contentsline {section}{\numberline {5.2}An Experimental Approach}{23}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Gardient Descent into Madness}{23}{subsection.5.2.1}
+\contentsline {chapter}{Bibliography}{25}{appendix*.10}

@@ -1,16 +1,14 @@
 \chapter{Background}
 
-\section{Quantum Information and Entanglement}
+This chapter will focus on the basics of quantum information that are relevant to understanding the Bell basis distinguishability question for LELM devices. In the first section, we will cover the basics of qubits, quidits, entanglement, Bell bases. In the next two sections, we will formally define LELM devices and the LELM distinguishability question.
 
-This section will focus on the basics of quantum information that are relevant to understanding the Bell basis distinguishability question for LELM devices.
-
-\subsection{Bits, Qubits, Qutrits, Qudits}
+\section{Bits, Qubits, Qutrits, Qudits}
 
 % Bits and Qubits
 
 The basic unit of classical information is the bit, which can take on either the value $0$ or $1$. A bit is exactly enough information necessary to describe the state of a two-state system. A common example is that of a light-switch, for which $0$ could represent ``off'' and $1$ could represent ``on.''
 
-The quantum analog of the bit is the \textit{qubit}. Qubits also describe two-state systems; however, they allow for specific combinations of possibilities. Qubits can take on either the value $\ket{0}$, $\ket{1}$, or any value of the form
+The quantum analog of the bit is the \textit{qubit}. Qubits also describe two-state systems; however, they allow for linear combinations of possibilities. Qubits can take on either the value $\ket{0}$, $\ket{1}$, or any value of the form
 \[
 \ket{b} = \alpha \ket{0} + \beta \ket{1}
 \]
@@ -21,9 +19,14 @@ where $\alpha$ and $\beta$ are complex numbers normalized such that $|\alpha|^2 
 	\beta
 \end{pmatrix}
 \]
-but the ket notation is often more efficient. 
+but the ket notation is often more efficient. \footnote{An aditional reason to prefer to ket notation to column vector notation is because the column vector is a coordinate vector we must specify an entire basis for the column vector to make sense. And while the individual kets present in a vector expressed via ket notation from a basis, the full basis does not need to be specified. For example, we can write $\ket{\psi} = \ket{0}$ instead of $\ket{\psi} = 1 \cdot \ket{0} + 0 \cdot \ket{1}$.}
 
-When one wishes to collect a value from a qubit, they \textit{measure} it. Then the qubit `collapses' and unambiguously become either $\ket{0}$ or $\ket{1}$. The probability of the qubit collapsing to each state are determined by $\alpha$ and $\beta$, with probability $|\alpha|^2$ of collapsing to $\ket{0}$ and probability $|\beta|^2$ of collapsing to $\ket{1}$.
+When one wishes to collect a value from a qubit, they \textit{measure} it. If one were to measure the qubit in the $\{\ket{0}, \ket{1}\}$ basis (more on this later), then the qubit `collapses' and unambiguously become either $\ket{0}$ or $\ket{1}$. The probability of the qubit collapsing to each state are determined by $\alpha$ and $\beta$, with probability $|\alpha|^2$ of collapsing to $\ket{0}$ and probability $|\beta|^2$ of collapsing to $\ket{1}$.
+
+One canonical example of a physical qubit is the polarization of a photon. A photon can be found to be either horizontally polarized (written as the single ket $\ket{H}$) or vertically polarized (written as $\ket{H}$). But in general, a the state of the polarization of a photon can be anything of the form
+\[
+\ket{\text{photon}} = \alpha \ket{H} + \beta \ket{V}
+\] so long as $\alpha$ and $\beta$ obey the normalization condition.
 
 % Bases
 
@@ -38,7 +41,7 @@ The set of all possible values for a qubit is a vector space of dimension two. O
 
 % Qtrits and Qdits
 
-Sometimes---such as in this thesis---we have the desire to represent systems that can take on more than two states. \textit{Qutrits} represent systems that can take on three values, and \textit{qudits} are refer to the generalizations of qubits that represent systems with an arbitrary (but finite) number of states. We write an arbitrary qutrit as 
+Sometimes---such as in this thesis---we have the desire to represent systems that can take on more than two states. \textit{Qutrits} represent systems that can take on three mutually-orthogonal states, and \textit{qudits} are refer to the generalizations of qubits that represent systems with an arbitrary (but finite) number of mutually-orthogonal states. We write an arbitrary qutrit as 
 \[
 \ket{t} = \alpha \ket{0} + \beta \ket{1} + \gamma \ket{2}
 \]
@@ -47,6 +50,10 @@ and an arbitrary qudit as
 \ket{q} = \alpha_0 \ket{0} + \alpha_1 \ket{1} + \cdots + \alpha_{d-1} \ket{d-1}.
 \] The numerical labels inside the kets can of course be changed without affecting any of the physics or the math.
 
+A common physical example of a qutrit is the spin of any spin-1 particle. When the spin angular momentum of a photon is measured, it can either be $-\hbar$, $0$, or $\hbar$. There are three mutually-orthogonal options. Qudits can be created for any dimension $d$ by storing information as the potential energy of a particle (with some fixed total energy) that trapped in a harmonic oscillator.
+
+\section{Multi-particle Systems and Entanglement}
+
 % Multi-particle systems
 
 Another useful generalization to consider is that of multi-particle systems. In classical computing, two-bit systems can take on four values: $00$, $01$, $10$, and $11$. In the notation of quantum information, we write these four values as: 
@@ -54,28 +61,37 @@ Another useful generalization to consider is that of multi-particle systems. In 
 \ket{0} \otimes \ket{0}, \ket{0} \otimes \ket{1}, \ket{1} \otimes \ket{0}, \text{ and } \ket{1} \otimes \ket{1}.
 \] The $\otimes$ symbol is used because our $\ket{0}$ and $\ket{1}$ kets are vectors, and their product in an element of a tensor product space. Similarly to how a qubit can be an arbitrary normalized linear combination of $\ket{0}$ and $\ket{1}$, states in a multi-particle system can be any normalized linear combination of the vectors $\ket{0} \otimes \ket{0}, \ket{0} \otimes \ket{1}, \ket{1} \otimes \ket{0}, \text{ and } \ket{1} \otimes \ket{1}$. Often we will omit the $\otimes$ and write $\ket{0} \otimes \ket{0}$ as either $\ket{0} \ket{0}$ or as $\ket{00}$.
 
+Tensor products obey the distributive property, so we have that 
 
-\subsection{Entanglement}
+\[
+\pn{\ket{0}}\otimes \frac{1}{\sqrt{2}}\pn{\ket{0} - \ket{1}} = \frac{1}{\sqrt{2}}\pn{\ket{0} \otimes \ket{0} -  \ket{0}\otimes\ket{1}} = \frac{1}{\sqrt{2}}\pn{\ket{00} -  \ket{01}}.
+\]
 
-Entanglement refers to any multi-particle quantum state that cannot be represented as 
+\textit{Entanglement} refers to any multi-particle quantum state that cannot be represented as a tensor-product of two single-particle systems. Two examples of non-entangled quantum states are $\ket{10}$ and $\frac{1}{2}\pn{\ket{00} + \ket{01}  +\ket{10}  + \ket{11}}$ because they can be written as 
+\[
+\ket{1} \otimes \ket{0} \quad\text{and}\quad \frac{1}{\sqrt{2}}\pn{\ket{0} + \ket{1}} \otimes \frac{1}{\sqrt{2}}\pn{\ket{0} + \ket{1}}.
+\] One example of an entangled state is
+\[
+\ket{\text{some entangled state}} = \frac{1}{\sqrt{2}}\pn{\ket{00} + i\ket{11}}.
+\]
 
-Two examples of non-entangled quantum states are $\ket{11}$ and $\frac{1}{\sqrt{2}}\ket{11}$
 
+A state is \textit{maximally entangled} if knowing information about one particle reveals information about the other particle. For example, while the state 
+\[
+\ket{\text{a state that's not maximally entangled}} = \frac{1}{\sqrt{3}}\pn{\ket{00} + \ket{10} + \ket{11}}
+\] is entangled, if we were to measure the first particle and see that it is in the $\ket{0}$ state, then we know with certainty that second particle is also in its $\ket{0}$ state.
 
-A state is maximally entangled if knowing information about one 
+It would be great if there were a process to algorithmically determine whether a particle is maximally entangled? And there is! First, we define the \textit{density matrix} $\rho$ of some state $\ket{\phi}$ to be $\rho = \bra{\psi}\ket{\psi}$.\footnote{When we multiply a bra on the left by a ket on the right then the multiplication is an outer product and results in a matrix.}
 
+A quantum state $\ket{\psi}$ is maximally entangled if and only if $\text{tr}\pn{\rho} = 1$.
 
-% How to check if a state is fully entangled 
-
-% density matrix, etc....
-
-\subsection{The Basics of Bell Bases}
+\section{The Basics of Bell Bases}
 
 The canonical Bell basis consists of the four states:
 
 \begin{align*}
-	\ket{\Phi^+} &= \frac{1}{\sqrt{2}} \pn{\ket{0}\ket{0} + \ket{0}\ket{0}} \\
-	\ket{\Phi^-} &= \frac{1}{\sqrt{2}} \pn{\ket{0}\ket{0} - \ket{0}\ket{0}} \\
+	\ket{\Phi^+} &= \frac{1}{\sqrt{2}} \pn{\ket{0}\ket{0} + \ket{1}\ket{1}} \\
+	\ket{\Phi^-} &= \frac{1}{\sqrt{2}} \pn{\ket{0}\ket{0} - \ket{1}\ket{1}} \\
 	\ket{\Psi^+} &= \frac{1}{\sqrt{2}} \pn{\ket{0}\ket{1} + \ket{1}\ket{0}} \\
 	\ket{\Psi^-} &= \frac{1}{\sqrt{2}} \pn{\ket{0}\ket{1} - \ket{1}\ket{0}}
 \end{align*}
