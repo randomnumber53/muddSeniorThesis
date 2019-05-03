@@ -50,7 +50,7 @@ and an arbitrary qudit as
 \ket{q} = \alpha_0 \ket{0} + \alpha_1 \ket{1} + \cdots + \alpha_{d-1} \ket{d-1}.
 \] The numerical labels inside the kets can of course be changed without affecting any of the physics or the math.
 
-A common physical example of a qutrit is the spin of any spin-1 particle. When the spin angular momentum of a photon is measured, it can either be $-\hbar$, $0$, or $\hbar$. There are three mutually-orthogonal options. Qudits can be created for any dimension $d$ by storing information as the potential energy of a particle (with some fixed total energy) that trapped in a harmonic oscillator.
+A common physical example of a qutrit is the spin of any spin-1 particle, such as a photon. When the spin angular momentum of a photon is measured, it can either be $-\hbar$, $0$, or $\hbar$---there are three mutually-orthogonal options. Qudits can be created for any dimension $d$ by storing information as the potential energy of a particle (with some fixed total energy) that trapped in a harmonic oscillator.
 
 \section{Multi-particle Systems and Entanglement}
 
@@ -81,13 +81,13 @@ A state is \textit{maximally entangled} if knowing information about one particl
 \ket{\text{a state that's not maximally entangled}} = \frac{1}{\sqrt{3}}\pn{\ket{00} + \ket{10} + \ket{11}}
 \] is entangled, if we were to measure the first particle and see that it is in the $\ket{0}$ state, then we know with certainty that second particle is also in its $\ket{0}$ state.
 
-It would be great if there were a process to algorithmically determine whether a particle is maximally entangled? And there is! First, we define the \textit{density matrix} $\rho$ of some state $\ket{\phi}$ to be $\rho = \bra{\psi}\ket{\psi}$.\footnote{When we multiply a bra on the left by a ket on the right then the multiplication is an outer product and results in a matrix.}
+% It would be great if there were a process to algorithmically determine whether a particle is maximally entangled? And there is! First, we define the \textit{density matrix} $\rho$ of some state $\ket{\phi}$ to be $\rho = \ket{\psi}\bra{\psi}$.\footnote{When we multiply a ket on the left by a bra on the right then the multiplication is an outer product and results in a matrix.} A quantum state $\ket{\psi}$ is maximally entangled if and only if $\text{tr}\pn{\rho} = 1$.
 
-A quantum state $\ket{\psi}$ is maximally entangled if and only if $\text{tr}\pn{\rho} = 1$.
+%TODO: fix def for max entanglement
 
 \section{The Basics of Bell Bases}
 
-The canonical Bell basis consists of the four states:
+The canonical Bell basis (alternatively: the $d=2$ Bell basis) consists of the four states:
 
 \begin{align*}
 	\ket{\Phi^+} &= \frac{1}{\sqrt{2}} \pn{\ket{0}\ket{0} + \ket{1}\ket{1}} \\
@@ -96,15 +96,53 @@ The canonical Bell basis consists of the four states:
 	\ket{\Psi^-} &= \frac{1}{\sqrt{2}} \pn{\ket{0}\ket{1} - \ket{1}\ket{0}}
 \end{align*}
 
+Together, these states span the same space as the set $\{\ket{00}, \ket{01}, \ket{10}, \ket{11}\}$.
+
+For many tasks, it is useful to be able to distinguish the Bell states. As an example, we'll look at a simple superdense coding scheme. The reason we'll focus on superdense coding is because even being able to distinguish three of the four $d=2$ Bell states is an improvement over what can be done classically.
+
+\subsection{A Superdense Coding Scheme}
+
+What is the most amount of information can be sent via one-bit? Classically, the answer is simple: one bit of information. This is true even if the information is sent between two parties---call them $A$ and $B$ and associate with them whatever A and B names you find appropriate---who are able to share information with each other and devise strategies ahead of time.
+
+But this answer changes if the parties are able to share and transmit quantum information. The scheme for doing so is as follows.
+
+$A$ and $B$ share the Bell state $\ket{\Phi^+}$. The person named $A$ holds on to the left particle and the person named $B$ holds onto the right particle. Then, $B$ travels far, far away. So far that the cost of sending information from $A$ to $B$ becomes expensive enough to justify humanity's investments in developing quantum information as a technology. Now, suppose $A$ has four messages to send. She associates each message with a Bell state:
+\begin{enumerate}
+	\item[$\ket{\Phi^+}$]: ``All is lost.''
+	\item[$\ket{\Phi^-}$]: ``Did you leave the refrigerator running?''
+	\item[$\ket{\Psi^+}$]: ``There is no hope left. Well, almost none. There is you.''
+	\item[$\ket{\Psi^-}$]: ``New phone, who 'dis?''
+\end{enumerate}
+Depending on the message she wants to send, she performs one of four operations on her particle, the left one:
+\begin{enumerate}
+	\item[$\ket{\Phi^+}$]: Leave the particle alone ($\ket{x} \mapsto \ket{x}$).
+	\item[$\ket{\Phi^-}$]: Flip the phase ($\ket{x} \mapsto -\ket{x}$).
+	\item[$\ket{\Psi^+}$]: Flip the bit ($\ket{x} \mapsto \ket{1-x}$).
+	\item[$\ket{\Psi^-}$]: Flip the phase and the bit ($\ket{x} \mapsto -\ket{1-x}$).
+\end{enumerate}
+For example, if $A$ performs the last operation, the state of the overall system transforms like
+\[
+\ket{\Phi^+} = \frac{1}{\sqrt{2}} \pn{\ket{0}\ket{0} + \ket{1}\ket{1}}  \mapsto \frac{1}{\sqrt{2}} \pn{\ket{1}\ket{0} - \ket{0}\ket{1}} = \ket{\Psi^-}.
+\]
+$A$ is able operate on just her particle and yet produce four separate Bell states. She can then send her particle to $B$ and, assuming $B$ is able to distinguish between the four Bell states, will be able to decode $A$'s message.
+
+But what happens if $B$ is restricted to linear evolution, local measurement devices? (Perhaps $B$ doesn't want to risk scrambling $A$'s bit by sending it into a crystal that has a very low probability of performing a general Bell basis measurement and has a very high chance of outputting noise.) It's been shown that under this restriction, $B$ would only be able to reliably distinguish three of the four Bell states. Then $A$ would only be able to send three messages.
+
+Three may not be as big as four, but it's considerably bigger than two. LELM devices are unable to perform as well as unrestricted quantum devices in this scenario, but perform strictly better than classical devices. The latter clause is why LELM devices are interesting for practical study; the former clauses is why they're interesting for theory. 
+
+\subsection{The Generalized Bell Basis}
+
 The Bell basis is a basis of entangled states for a two-particle system. If each particle has dimension $d$, then the Bell basis is:
 \[
 \left\{ \ket{\Psi_c^p} = \frac{1}{\sqrt{d}} \sum_{j=0}^{d-1} \omega^{pj} \ket{j}\ket{j + c \;(\text{mod}\; d)} \text{ such that } c, p \in \mathbb{Z} \text{ and } 0 \leq c,p < d \right\}
 \]
-where $\omega = e^{i 2 \pi / d}$ is a primitive $d$th root of unity. Thus, for two $d$-dimensional particles, there are $d^2$ states in the Bell basis.
+where $\omega = e^{i 2 \pi / d}$ is a primitive $d$th root of unity. Thus, for two $d$-dimensional particles, there are $d^2$ states in the Bell basis. We usually refer to a particle in the generalized Bell basis by specifying its correlation class $c$ and its phase $p$. Motivation for why we care about the generalized Bell basis can be found in Chapter 3.
 
-\section{Linear Evolution Local Measurement Apparatuses}
+\section{Linear Evolution Local Measurement Devices}
 
-A Linear Evolution Local Measurement (LELM) apparatus (Figure \ref{fig:apparatus}) has two main parts to it. The Linear Evolution part of the LELM apparatus refers to how the device can linearly evolve either particle separately, but cannot manipulate a particle based on the value of the other. So, for example, LELM devices cannot perform a controlled bit-shift. The Local Measurement part of the LELM apparatus refers to how measurements are restricted to acting on a single particle at a time. Thus, a LELM apparatus takes in two particles, and outputs two detection events or `clicks'.
+A Linear Evolution Local Measurement (LELM) apparatus (Figure \ref{fig:apparatus}) has two main parts to it. The Linear Evolution part of the LELM apparatus refers to how the device cannot manipulate either of the input particles based on the value of the other. (The device cannot, for example, perform a controlled bit-shift. ) It evolves either particle separately, with the exception that it is allowed to mix channels---i.e., to put itself in a state where it knowns information about a particle, but not whether the particle entered through the right or left input channel.
+
+The Local Measurement part of LELM refers to how measurements are restricted to acting on a single particle at a time. A LELM apparatus takes in two particles, and outputs two detection events or `clicks', each corresponding to one of the $2d$ \textit{detection modes}.
 
 \begin{figure}
 \centering
@@ -116,7 +154,7 @@ A Linear Evolution Local Measurement (LELM) apparatus (Figure \ref{fig:apparatus
 \draw[thick,->] (-3,0.5) -- (-0.5,0.75) node[midway, above, sloped] {R channel};
 \node[text width=3cm] at (2, 0.75) {$U_{\text{R}}$};
 \node[text width=3cm] at (2, 3.25) {$U_{\text{L}}$};
-\node[text width=1cm] at (3.25, 2) {Detec- tors};
+\node[text width=1cm] at (3.25, 2) {$U_\text{mix}$};
 
 \draw[thick,->] (1.625,3.25) -- (2.375,3.25);
 \draw[thick,->] (1.625,0.75) -- (2.375,0.75);
@@ -141,13 +179,14 @@ The basis of single-particle states is:
 \[
 \mathcal{B}_{\text{single-particle}} = \{\ket{0, L}, \ket{0, R}, \ket{1, L}, \ket{1, R}, \ldots, \ket{d-1, L}, \ket{d-1, R}\}
 \]
-The basis is of size $2d$, since each particle can either be from the left channel or the right channel.
+The basis is of size $2d$, since each particle can either be from the left channel or the right channel. A pair of two detection modes is called a \textit{detection signature}. Each detection mode is an element in the span of $\mathcal{B}_{\text{single-particle}}$.  However, if $\ket{i}$ and $\ket{j}$ are detection modes then when determining their combined detection signature, we cannot simply take $\ket{i} \otimes \ket{j}$, since that may include inputs where two particles are coming from the same channel. Thus, we introduce the $P_{LR}$ projection operator, which removes all elements of $\mathcal{B}_{\text{single-particle}} \times \mathcal{B}_{\text{single-particle}}$ of the form $\ket{*, L}\ket{*', L}$ or $\ket{*, R}\ket{*', R}$ and renormalizes the resulting state.
 
-A pair of two detector modes is called a detection signature. Each detection mode is an element in the span of $\mathcal{B}_{\text{single-particle}}$. However, if $\ket{i}$ and $\ket{j}$ are detection modes then when determining their combined detection signature, we cannot simply take $\ket{i} \otimes \ket{j}$, since that may include inputs where two particles are coming from the same channel. Thus, we introduce the $P_{LR}$ projection operator, which removes all elements of $\mathcal{B}_{\text{single-particle}} \times \mathcal{B}_{\text{single-particle}}$ of the form $\ket{*, L}\ket{*', L}$ or $\ket{*, R}\ket{*', R}$ and renormalizes resulting the state.
+An LELM device is specified by defining the $d\times d$ matrices $U_{\text{R}}$ and $U_{\text{L}}$, the $2d \times 2d$ matrix $U_{\text{mix}}$, and the $2d$ detection signatures $\ket{1}, \ldots, \ket{2d}$, which are vectors in the vector space $\textsc{span}\pn{\mathcal{B}_{\text{single-particle}}}$.
+
+A small technicality. We've introduced here three transformations: $U_{\text{R}}$, $U_{\text{L}}$, and $U_\text{mix}$. The purpose of $U_\text{mix}$ is to allow mixing of channels that the particles may take in addition to possible operations the particles may go through individually. We can, however, incorporate the operation $U_\text{mix}$ into the detection modes. The LELM device with $U_\text{mix} = U$ and detection modes $\ket{1}, \ldots, \ket{2d}$ as detection modes is equivalent to the device with $U_\text{mix} = I$, the identity matrix, and detection modes $U^\dagger \ket{1}, \ldots, U^\dagger \ket{2d}$.
 
 \section{The Distinguishability Problem}
 
-\subsection{Motivation}
--practical (cite)
--mathematical (cite)
-\subsection{Formalization}
+Here, we formally define the LELM Bell basis distinguishability problem. First, we fix $d$, the dimension of our particles. Let $\mathcal{B}_d$ refer to the $d$-dimensional Bell basis. The distinguishability problem is the following.
+\\ \\
+What's the largest $k$ such that there exists a subset of the Bell basis $S = \{\ket{\Psi_1}, \ldots, \ket{\Psi_1}\} \subseteq \mathcal{B}_d$ and there exists an LELM device such that whenever a state $\ket{\Psi_a} \in S$ has a nonzero probability of causing detector pair $i, j$ to fire then no other state $\ket{\Psi_a} \in S$ has a nonzero probability of causing detector pair $i, j$ to fire. 
